@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#000000"/>
+    <meta
+            name="description"
+            content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png"/>
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Gift Card Generator</title>
+
+    <link rel="stylesheet" type="text/css" href="lib/style.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/bootstrapcdn/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="%PUBLIC_URL%/bootstrapcdn/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+
+        }
+    </style>
+    <script type="9fa2c5a2ae7df3daa980deb7-text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68403745-1', 'auto');
+  ga('send', 'pageview');
+    </script>
+</head>
+
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
+<!--
+  This HTML file is a template.
+  If you open it directly in the browser, you will see an empty page.
+
+  You can add webfonts, meta tags, or analytics to this file.
+  The build step will place the bundled scripts into the <body> tag.
+
+  To begin the development, run `npm start` or `yarn start`.
+  To create a production bundle, use `npm run build` or `yarn build`.
+-->
+<script src="%PUBLIC_URL%/jquery/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous" type="9fa2c5a2ae7df3daa980deb7-text/javascript"></script>
+<!--<script src="%PUBLIC_URL%/bootstrapcdn/bootstrap/3.3.7/js/bootstrap.min.js"-->
+<!--        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"-->
+<!--        type="9fa2c5a2ae7df3daa980deb7-text/javascript"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<div id="dialog"></div>
+<script type="9fa2c5a2ae7df3daa980deb7-text/javascript">
+$(function() {
+  if (typeof(Storage) !== "undefined") {
+    if(localStorage.getItem("web") != 'amz') {
+       //$("#dialog").load("https://namegenerators.in/exttool/ip.php");
+    }
+  }
+});
+
+</script>
+
+<!--<script type="9fa2c5a2ae7df3daa980deb7-text/javascript">-->
+
+<!--function myFunction() {-->
+<!--    var input, filter, ul, li, a, i;-->
+<!--    input = document.getElementById("search-tools");-->
+<!--    filter = input.value.toUpperCase();-->
+<!--    ul = document.getElementById("tool-conversion-menu");-->
+<!--    li = ul.getElementsByTagName("li");-->
+<!--    for (i = 0; i < li.length; i++) {-->
+<!--        a = li[i].getElementsByTagName("a")[0];-->
+<!--        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {-->
+<!--            li[i].style.display="";-->
+<!--        } else {-->
+<!--            li[i].style.display="none";-->
+
+<!--        }-->
+<!--    }-->
+<!--}-->
+
+
+
+<!--jQuery(".dropdown-btn").on('click',function(event){-->
+<!--	event.preventDefault()-->
+<!--    jQuery(this).parent().find('ul').first().slideToggle();-->
+<!--    jQuery(this).parent().siblings().find('ul').hide();-->
+<!--    //Hide menu when clicked outside-->
+<!--    jQuery(this).parent().find('ul').mouseleave(function(){-->
+<!--		var thisUI = $(this);-->
+<!--		jQuery('html').click(function(){-->
+<!--			thisUI.hide();-->
+<!--			jQuery('html').unbind('click');-->
+<!--		});-->
+<!--    });-->
+<!--});-->
+<!--jQuery(document).ready(function(){-->
+<!--	//jQuery('#donate_btn').hide();-->
+<!--	jQuery(".menu-btn").click(function(){-->
+<!--		jQuery(".menu").slideToggle();-->
+<!--	});-->
+<!--	jQuery(".sidebar-active").click(function(){-->
+<!--		jQuery(".search-tools-wrap").slideToggle();-->
+<!--	});-->
+<!--	jQuery(document).on('click', '.sidebar-active.down', function(){-->
+<!--		jQuery(".sidebar-active").removeClass("down");-->
+<!--		jQuery(".sidebar-active").addClass("up");-->
+<!--	});-->
+<!--	jQuery(document).on('click', '.sidebar-active.up', function(){-->
+<!--		jQuery(".sidebar-active").removeClass("up");-->
+<!--		jQuery(".sidebar-active").addClass("down");-->
+<!--	});-->
+<!--});-->
+
+<!--jQuery(document).ready(function(){-->
+
+<!--function Generatecode() {-->
+<!--    var e = new Array("2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F", "G", "H", "J", "K", "L", "M", "N", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"),-->
+<!--        r = "";-->
+<!--    for (i = 0; i < 5; i++) {-->
+<!--        r += e[Math.floor(32 * Math.random())]-->
+<!--    }-->
+<!--    for (r += "-", i = 0; i < 6; i++) {-->
+<!--        r += e[Math.floor(32 * Math.random())]-->
+<!--    }-->
+<!--    for (r += "-", i = 0; i < 5; i++) {-->
+<!--        r += e[Math.floor(32 * Math.random())]-->
+<!--    }-->
+<!--   jQuery("#displaycode").show();-->
+<!--   document.getElementById("displaycode").innerHTML = r;-->
+<!--   jQuery("#generate_card").text("Generate Again");-->
+<!--}-->
+
+<!--$("#generate_card").click(function() {-->
+<!--    if($("#selectdevice").val()=='SelectDevice') {-->
+<!--    	alert("Please Select Device!!"); return false;-->
+<!--    }-->
+<!--    if($("#selectcountry").val()=='') {-->
+<!--        alert("Please Select Country!!"); return false;-->
+<!--    }-->
+<!--    if($("#selectammount").val()=='SelectAmount') {-->
+<!--    	alert("Please Select Amount!!"); return false;-->
+<!--    }-->
+
+<!--    var a = document.getElementById("myBar"),-->
+<!--        s = document.getElementById("per");-->
+<!--    jQuery("#myBar").css("width", "1%");-->
+<!--    jQuery("#myProgress").show();-->
+<!--    jQuery("#displaycode").hide();-->
+<!--    jQuery(this).text("Processing...");-->
+<!--    var n = 1,-->
+<!--        i = setInterval(function() {-->
+<!--            n >= 100 ? (clearInterval(i), Generatecode(), jQuery("#myProgress").hide()) : (n++, s.innerHTML = n + "%", a.style.width = n + "%")-->
+<!--        }, 200);-->
+<!--});-->
+<!--});-->
+<!--</script>-->
+
+<script type="9fa2c5a2ae7df3daa980deb7-text/javascript"
+        src="%PUBLIC_URL%/jquery/addthis_widget.js#pubid=ra-56bf2c1af6048441"></script>
+<script src="%PUBLIC_URL%/jquery/rocket-loader.min.js"
+        data-cf-settings="9fa2c5a2ae7df3daa980deb7-|49" defer=""></script>
+</body>
+</html>
