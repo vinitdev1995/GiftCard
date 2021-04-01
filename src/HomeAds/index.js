@@ -1,7 +1,7 @@
 import React from 'react';
 import {Bling as GPT} from "react-gpt";
 
-const BodyAds = () => {
+const HomeAds = () => {
     return(
         <div >
             <GPT
@@ -16,4 +16,4 @@ const BodyAds = () => {
     )
 };
 
-export default BodyAds;
+export default HomeAds;

@@ -18,16 +18,14 @@ import pic15 from '../assets/images/etsy.png'
 import pic16 from '../assets/images/fandango.png'
 import pic17 from '../assets/images/forever21.png'
 import pic18 from '../assets/images/fortnite.png'
+import HomeAds from "../HomeAds";
+import BodyAds from "../BodyAds";
 
 const Body = () => {
     return(
         <div className="container">
             <br/>
-            <div className="container site-card-border-less-wrapper">
-                <Card title="Card title" bordered={false} style={{ width: 300 }}>
-                    <p>Card content</p>
-                </Card>
-            </div>
+            <HomeAds/>
             <div>
                 <div className="container">
                     <div className="container">
@@ -121,6 +119,10 @@ const Body = () => {
                                         <img src={pic12} alt="Disney Gift Card Generator"
                                              title="Disney Gift Card Generator" className="gift-card-img"/></a>
                                     </div>
+                                    <div>
+                                        <br/>
+                                    <BodyAds/>
+                                    </div>
                                     <div className="col col-md-2 col-xs-6" style={{marginTop: '25px'}}><a
                                         href="/dunkindonuts" title="Dunkin Donuts Gift Card Generator">
                                         <img src={pic13} alt="Dunkin Donuts Gift Card Generator"
@@ -148,6 +150,10 @@ const Body = () => {
                                         href="/fortnite" title="Fortnite Gift Card Generator">
                                         <img src={pic18} alt="Fortnite Gift Card Generator"
                                              title="Fortnite Gift Card Generator" className="gift-card-img"/></a>
+                                    </div>
+                                    <br/>
+                                    <div>
+                                        <BodyAds/>
                                     </div>
                                 </div>
                             </div>
